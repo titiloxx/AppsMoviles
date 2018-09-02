@@ -3,13 +3,13 @@
 	<title>Compumundo</title>
     <script src="js/Jquery.js"></script>
     <script src="js/Utilidades.js"></script>
-    <script src="js/boostrap.js"></script>
+    <script src="js/bootstrap.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-    <link rel="stylesheet" type="text/css" href="css/boostrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<meta name="keywords" content="HTML5">
 </head>
 <body>
-
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 	<header class="row" style="background-color: #03A9F4;">
 		<img src="img/logo.jpg" style="display:  inline-block;float: left;">
 		<h1 style="margin-top: 95px;margin-left: 150px;">Venta de productos electronicos</h1>
@@ -102,5 +102,25 @@
 	<footer>	
 	</footer>
 
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 </body></html>
