@@ -25,23 +25,23 @@
 				<li><a href="#gaming">Gaming</a></li>	
 				<li><a href="encuesta.html">Encuesta</a></li>
 			</ul>
-        <button type="button" class="btn btn-warning btn-lg btnCarro" data-toggle="modal" data-target="#carro">Abrir carro</button>
+        <button type="button" class="btn btn-warning btn-lg btnCarro" data-toggle="modal" data-target="#carro">Carro<span class="primary badge">0</span></button>
 	</aside>
 
 	<section id="computadoras" style="display: inline-block;">
 		<article>
 			<h3 style="margin-left: 20px;">Computadoras</h3>
 			<div class="articulo">
-				<img  class="imagenes pointer" src="img/alienware.jpg">
-				<p>Las computadoras alienware son lo mejor que hay gamer en el mercado actualmente.</p>
+				<img id="alienware" class="imagenes pointer" src="img/alienware.jpg">
+				<p>Computadora Alienware i5 6600k gtx 1080</p>
 			</div>
 			<div class="articulo">
-				<img class="imagenes pointer" src="img/orion.jpg">
-				<p>Orion es lo ultimo en tecnologia de computadoras cuanticas.</p>
+				<img id="orion" class="imagenes pointer" src="img/orion.jpg">
+				<p>Computadora Orion i9 6600 gtx 1070</p>
 			</div>
 			<div class="articulo">
-				<img class="imagenes pointer" src="img/apple.jpg">
-				<p>Nada mejor que confiar en las computadoras de escritorio Apple.</p>
+				<img id="apple" class="imagenes pointer" src="img/apple.jpg">
+				<p>Computadora Apple i7 6600k gtx 1060</p>
 			</div>
 		</article>
 	</section>
@@ -50,16 +50,16 @@
 		<article>
 			<h3 style="margin-left: 20px;">Televisores</h3>
 			<div class="articulo">
-				<img class="imagenes pointer" src="img/TVSamsung.jpeg">
+				<img id="samsung" class="imagenes pointer" src="img/TVSamsung.jpeg">
 				<p>Samsung Samartv 4k 40"</p>
 			</div>
 			<div class="articulo">
-				<img class="imagenes pointer" src="img/TVJumbo.jpeg">
+				<img id="jumbo" class="imagenes pointer" src="img/TVJumbo.jpeg">
 				<p>Televisor Jumbo Pac, full hd 4k</p>
 			</div>
 			<div class="articulo">
-				<img class="imagenes pointer" src="img/TVtoshiba.jpeg">
-				<p>Televisor LCD curvo Toshiba 32", vistas ampias panoramicas en tu living</p>
+				<img id="toshiba" class="imagenes pointer" src="img/TVtoshiba.jpeg">
+				<p>Televisor LCD curvo Toshiba 32"</p>
 			</div>
 		</article>
 	</section>
@@ -68,15 +68,15 @@
 		<article>
 			<h3 style="margin-left: 20px;">Notebooks</h3>
 			<div class="articulo">
-				<img class="imagenes pointer" src="img/acerN.jpeg">
+				<img id="acer" class="imagenes pointer" src="img/acerN.jpeg">
 				<p>Acer 3300 series, 15" i5 8gb ram 500gb</p>
 			</div>
 			<div class="articulo">
-				<img class="imagenes pointer" src="img/hp.jpeg">
+				<img id="hp" class="imagenes pointer" src="img/hp.jpeg">
 				<p>Hp Pavilion 13" Touchscreen.</p>
 			</div>
 			<div class="articulo">
-				<img class="imagenes pointer" src="img/razor.jpeg">
+				<img id="razor" class="imagenes pointer" src="img/razor.jpeg">
 				<p>Hp Razor 15" i7 7700k, 16 gb ram, 1tb ssd.</p>
 			</div>
 		</article>
@@ -86,15 +86,15 @@
 		<article>
 			<h3 style="margin-left: 20px;">Gaming</h3>
 			<div class="articulo">
-				<img class="imagenes pointer" src="img/eblue.jpeg">
+				<img id="eblue" class="imagenes pointer" src="img/eblue.jpeg">
 				<p>E-Blue, mouse gamer 5000dpi ultra sentitive</p>
 			</div>
 			<div class="articulo">
-				<img class="imagenes pointer" src="img/rog.jpeg">
+				<img id="rog" class="imagenes pointer" src="img/rog.jpeg">
 				<p>Asus Rog, 3000dpi</p>
 			</div>
 			<div class="articulo">
-				<img class="imagenes pointer" src="img/kensi.jpeg">
+				<img id="kensi" class="imagenes pointer" src="img/kensi.jpeg">
 				<p>Kensington durable mouse.</p>
 			</div>
 		</article>
@@ -110,13 +110,16 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
+                    <h4 class="modal-title">Carrito de compras</h4>
                 </div>
                 <div class="modal-body">
-                    <p>Some text in the modal.</p>
+                    <ul class="list-group" id="listaCarro">
+
+                    </ul>
+                    <h3 id="total"></h3>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                 </div>
             </div>
 

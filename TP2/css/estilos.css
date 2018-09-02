@@ -32,7 +32,7 @@ section{
 	width: 100%;
 }
 .pointer:hover {
-    opacity: .7;
+    opacity: .8;
     cursor:pointer;
 }
 .btnCarro{
@@ -40,4 +40,11 @@ section{
 }
 .listaMenu{
     display:inline-block;
+}
+li a,h2{
+    color:black;
+}
+.btn .badge {
+    margin-left: 8px;
+    background-color: #d65050;
 }
