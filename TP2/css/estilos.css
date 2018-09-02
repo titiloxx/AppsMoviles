@@ -35,3 +35,9 @@ section{
     opacity: .7;
     cursor:pointer;
 }
+.btnCarro{
+    float:right;
+}
+.listaMenu{
+    display:inline-block;
+}

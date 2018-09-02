@@ -9,7 +9,7 @@
 	<meta name="keywords" content="HTML5">
 </head>
 <body>
-    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
 	<header class="row" style="background-color: #03A9F4;">
 		<img src="img/logo.jpg" style="display:  inline-block;float: left;">
 		<h1 style="margin-top: 95px;margin-left: 150px;">Venta de productos electronicos</h1>
@@ -18,14 +18,14 @@
 	<aside style="">
 
 			<h2 style="margin-left: 5px;">Categorías</h2>
-			<ul>
+			<ul class="listaMenu">
 				<li><a href="#computadoras">Computadoras</a></li>
 				<li><a href="#televisores">Televisores</a></li>
 				<li><a href="#notebooks">Notebooks</a></li>	
 				<li><a href="#gaming">Gaming</a></li>	
 				<li><a href="encuesta.html">Encuesta</a></li>
 			</ul>
-
+        <button type="button" class="btn btn-warning btn-lg btnCarro" data-toggle="modal" data-target="#carro">Abrir carro</button>
 	</aside>
 
 	<section id="computadoras" style="display: inline-block;">
@@ -103,7 +103,7 @@
 	</footer>
 
     <!-- Modal -->
-    <div id="myModal" class="modal fade" role="dialog">
+    <div id="carro" class="modal fade" role="dialog">
         <div class="modal-dialog">
 
             <!-- Modal content-->
