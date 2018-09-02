@@ -31,4 +31,7 @@ li{
 section{
 	width: 100%;
 }
-
+.pointer:hover {
+    opacity: .7;
+    cursor:pointer;
+}
