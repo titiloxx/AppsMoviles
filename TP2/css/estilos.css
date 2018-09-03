@@ -40,8 +40,10 @@ section{
 .listaMenu{
     display:inline-block;
 }
-li a,h2{
-    color:black;
+
+
+li a, h2 {
+    color: black;
 }
 .btn .badge {
     margin-left: 8px;
@@ -74,6 +76,7 @@ li {
         li a:hover {
             background-color: #111 !important;
         }
+
 /* MEDIA QUERIES */
 
 
@@ -98,40 +101,58 @@ li {
     .btnCarro{
         width:100%;
     }
-}
-@media (min-width: 600px) {
-    .articulo {
-        width: 45%;
-        display: inline-block;
-    }
-    h3 {
-        text-align: center;
-    }
-    #logo {
-        width: 30%;
-    }
-    .btnCarro {
-        width: 20%;
+    .listaMenu li {
+        width:100%
     }
 }
-@media (min-width: 800px) {
-    .articulo {
-        width: 32.9%;
-        display: inline-block;
+@media (min-width: 500px) {
+    .listaMenu li {
+        width: auto;
     }
-    h1 {
-        margin-top: 95px !important;
-        margin-left: 150px !important;
-    }
-    h3 {
-        text-align: left;
-    }
-    #logo {
-        width: 15%;
-    }
-    .btnCarro {
-        width: 10%;
+}
+
+    @media (min-width: 600px) {
+        .articulo {
+            width: 45%;
+            display: inline-block;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        #logo {
+            width: 30%;
+        }
+
+        .btnCarro {
+            width: 20%;
+        }
+
+       
     }
 
-}
+    @media (min-width: 800px) {
+        .articulo {
+            width: 32.9%;
+            display: inline-block;
+        }
+
+        h1 {
+            margin-top: 95px !important;
+            margin-left: 150px !important;
+        }
+
+        h3 {
+            text-align: left;
+        }
+
+        #logo {
+            width: 15%;
+        }
+
+        .btnCarro {
+            width: 10%;
+        }
+    }
 
