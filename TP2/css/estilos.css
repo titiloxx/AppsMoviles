@@ -51,12 +51,12 @@ li a,h2{
 background-color:#1093ce;
 }
 
-ul {
+.modal-body ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    display:block;
 }
 
 li {
