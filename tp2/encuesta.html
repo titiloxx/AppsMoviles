@@ -1,6 +1,11 @@
 <html><head>
 	<title>Encuesta</title>
+	    <script src="js/Jquery.js"></script>
+    <script src="js/Utilidades.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/comprobaciones.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<meta name="keywords" content="HTML5">
 </head>
 <body>
@@ -14,11 +19,8 @@
 
 			<h2 style="margin-left: 5px;">Categorías</h2>
 			<ul>
-				<li><a href="#computadoras">Computadoras</a></li>
-				<li><a href="#televisores">Televisores</a></li>
-				<li><a href="#notebooks">Notebooks</a></li>	
-				<li><a href="#gaming">Gaming</a></li>	
-				<li><a href="">Encuesta</a></li>
+				<li><a href="index.html">Articulos</a></li>
+				<li><a href="encuesta.html">Encuesta</a></li>
 			</ul>
 
 	</aside>
@@ -26,31 +28,38 @@
 	<section>
 		<article>
 			<h3>Encuesta: </h3>
-			<h4>Nombre:  
-				<input type="text" name="nombre" placeholder="Ingrese su nombre"></h4>
-			<h4>Apellido: 
-			<input type="text" name="apellido" placeholder="Ingrese su apellido"></h4>
-			<h4>Fecha de nacimiento
-				<input type="date" name="fecha" placeholder="Ingrese su fecha de nacimiento"></h4>
-			<h4>Sexo <br>
-			  <input type="radio" name="sexo" value="hombre"> Hombre<br>
-			  <input type="radio" name="sexo" value="mujer"> Mujer<br>
-			  <input type="radio" name="sexo" value="otro"> Otro</h4>
-			<h4>Valoracion
-			<select name="valoracion">
-			   <option value="">Lamentable</option> 
-			   <option value="">Mala</option> 
-			   <option value="">Podria ser mejor</option>
-			   <option value="">Buena</option> 
-			   <option value="">Me encanto</option>
+			<h5>(*) Campos obligatorios.</h5>
+			<h4>Nombre (*):  
+				<input id="nom" class="required" type="text" name="nombre" placeholder="Ingrese su nombre"></h4>
+			<h4>Apellido (*): 
+			<input id="ape" class="required" type="text" name="apellido" placeholder="Ingrese su apellido"></h4>
+			<h4>Fecha de nacimiento (*):
+				<input id="fecha" class="required" type="date" name="fecha" placeholder="Ingrese su fecha de nacimiento"></h4>
+
+			<h4>Sexo (*):
+			<select class="required" id="sexo">
+				<option value="">Elegir...</option> 
+			   <option value="Hombre">Hombre</option> 
+			   <option value="Mujer">Mujer</option> 
+			   <option value="Otro">Otro</option>
+			</select></h4>
+
+			<h4>Valoracion (*):
+			<select class="required" id="valoracion">
+				<option value="">Elegir...</option> 
+			   <option value="Lamentable">Lamentable</option> 
+			   <option value="Mala">Mala</option> 
+			   <option value="Podria ser mejor">Podria ser mejor</option>
+			   <option value="Buena">Buena</option> 
+			   <option value="Me encanto">Me encanto</option>
 			</select>
 			</h4>
 			<h4>Comentario
-				<input type="text" name="comentario" placeholder="Ingrese un comentario"></h4>
+				<input id="comentario" type="text" name="comentario" placeholder="Ingrese un comentario"></h4>
 
-			<button type="button">Submit</button>
-			<button type="button">Cancelacion</button>
-			<button type="button">Restablecer valores</button>
+			<button id="submit" type="button">Submit</button>
+			<button id="cancelar" type="button">Cancelacion</button>
+			<button id="restablecer" type="button">Restablecer valores</button>
 
 		</article>
 	</section>
