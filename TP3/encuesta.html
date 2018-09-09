@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title>Compumundo</title>
+    <script src="js/Jquery.js"></script>
+    <script src="js/Utilidades.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/comprobaciones.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <meta name="keywords" content="HTML5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <header class="row" style="background-color: #03A9F4;">
+        <img id="logo" src="img/logo.jpg" style="display:  inline-block;float: left;">
+        <h1 style="">Venta de productos electronicos</h1>
+    </header>
+
+    <aside style="">
+        <ul class="listaMenu">
+            <li><a href="index.html">Articulos</a></li>
+            <li><a href="encuesta.html">Encuesta</a></li>
+        </ul>
+     
+    </aside>
+
+    <section>
+        <article>
+            <h3>Encuesta: </h3>
+            <h5>(*) Campos obligatorios.</h5>
+            <h4>
+                Nombre (*):
+                <input id="nom" class="required" type="text" name="nombre" placeholder="Ingrese su nombre">
+            </h4>
+            <h4>
+                Apellido (*):
+                <input id="ape" class="required" type="text" name="apellido" placeholder="Ingrese su apellido">
+            </h4>
+            <h4>
+                Fecha de nacimiento (*):
+                <input id="fecha" class="required" type="date" name="fecha" placeholder="Ingrese su fecha de nacimiento">
+            </h4>
+
+            <h4>
+                Sexo (*):
+                <select class="required" id="sexo">
+                    <option value="">Elegir...</option>
+                    <option value="Hombre">Hombre</option>
+                    <option value="Mujer">Mujer</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </h4>
+
+            <h4>
+                Valoracion (*):
+                <select class="required" id="valoracion">
+                    <option value="">Elegir...</option>
+                    <option value="Lamentable">Lamentable</option>
+                    <option value="Mala">Mala</option>
+                    <option value="Podria ser mejor">Podria ser mejor</option>
+                    <option value="Buena">Buena</option>
+                    <option value="Me encanto">Me encanto</option>
+                </select>
+            </h4>
+            <h4>
+                Comentario
+                <input id="comentario" type="text" name="comentario" placeholder="Ingrese un comentario">
+            </h4>
+
+            <button id="submit" type="button">Submit</button>
+            <button id="cancelar" type="button">Cancelacion</button>
+            <button id="restablecer" type="button">Restablecer valores</button>
+
+        </article>
+    </section>
+    <footer></footer>
+
+
+</body>
+</html>
