@@ -1,5 +1,12 @@
 			
 $( document ).ready(function() {
+
+
+		$("#alerta").hide();
+
+
+
+
 	$("#submit").on("click", function(){
 	 		
 			if ($("#nom").val().length < 1 || $("#ape").val().length < 1 || 
@@ -24,12 +31,21 @@ $( document ).ready(function() {
 				$("#fecha").val().length != 0 && $("#valoracion").val().length != 0 && 
 				$("#sexo").val().length != 0) 
 			{
-			prompt("Nombre: ", $("#nom").val());
-			prompt("Apellido: ", $("#ape").val());
-			prompt("Fecha de Nacimiento: ", $("#fecha").val());
-			prompt("Sexo: ", $("#sexo").val());
-			prompt("Valoracion: ", $("#valoracion").val());
-			prompt("Comentario: ", $("#comentario").val());
+
+				$("#alerta").fadeIn();
+
+	    		setTimeout(function() {
+	        		$("#alerta").fadeOut(1500);
+	    		},5000);
+
+				prompt("Nombre: ", $("#nom").val());
+				prompt("Apellido: ", $("#ape").val());
+				prompt("Fecha de Nacimiento: ", $("#fecha").val());
+				prompt("Sexo: ", $("#sexo").val());
+				prompt("Valoracion: ", $("#valoracion").val());
+				prompt("Comentario: ", $("#comentario").val());
+
+
 			}
 	});
 
