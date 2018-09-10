@@ -14,7 +14,10 @@ $(document).ready(function () {
 
 function AgregarProducto(id,producto)
 {
-    $("#"+id).append('<div class="articulo"><img id="apple" class="imagenes pointer" src="img/apple.jpg"><p>Computadora Apple i7 6600k gtx 1060</p></div>');
+    var id =
+    var nombre =
+    var imagen=
+    $("#"+id).append('<div class="articulo"><img id="'++'" class="imagenes pointer" src="img/apple.jpg"><p>Computadora Apple i7 6600k gtx 1060</p></div>');
  
 }
 function Success(data){
