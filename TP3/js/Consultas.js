@@ -10,16 +10,17 @@ $(document).ready(function () {
         }
     });
 
+
 });
 
-function AgregarProducto(id,producto)
+function AgregarProducto(id, imagen, nombre)
 {
-    var id =
-    var nombre =
-    var imagen=
-    $("#"+id).append('<div class="articulo"><img id="'++'" class="imagenes pointer" src="img/apple.jpg"><p>Computadora Apple i7 6600k gtx 1060</p></div>');
- 
+    $('<div class="articulo"><img id="'+ id +'" class="imagenes pointer" src="'+ imagen +'"><p>'+ nombre +'</p></div>').appendTo($("#computadoras"));
 }
+
 function Success(data){
     var obj = JSON.parse(data);
+    for (var i = 0; i < 3; i++) {
+    AgregarProducto(obj.productos[i].id, obj.productos[i].imagen, obj.productos[i].nombre);
+    }
 }
